@@ -9,7 +9,6 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import { db } from '../../services/firebase';
 import { doc, getDoc, collection, addDoc, updateDoc, serverTimestamp } from 'firebase/firestore';
 import { useAppStore } from '../../store/useAppStore';
-import ReactNativeHapticFeedback from "react-native-haptic-feedback";
 
 type ParamList = {
     ProviderRequestDetail: {
@@ -66,7 +65,7 @@ export function ProviderRequestDetailScreen() {
 
         setSubmitting(true);
         try {
-            ReactNativeHapticFeedback.trigger("impactHeavy");
+            // Haptic removed
             await addDoc(collection(db, 'offers'), {
                 providerId: user.uid,
                 requestId: reqId,

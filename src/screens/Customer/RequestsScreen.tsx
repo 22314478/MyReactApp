@@ -8,7 +8,7 @@ import { db } from '../../services/firebase';
 import { EmptyState } from '../../components/EmptyState';
 import { collection, query, where, getDocs, orderBy } from 'firebase/firestore';
 import { useAppStore } from '../../store/useAppStore';
-import { RequestSkeleton } from '../../components/Skeletons';
+// import { RequestSkeleton } from '../../components/Skeletons'; (Removed)
 
 interface RequestItem {
     id: string;
@@ -131,7 +131,7 @@ export function RequestsScreen() {
                 ListEmptyComponent={
                     <View style={{ flex: 1 }}>
                         {loading ? (
-                            <RequestSkeleton />
+                            <ActivityIndicator size="large" color={colors.primary} style={{ marginTop: spacing.xl }} />
                         ) : (
                             <EmptyState
                                 icon="document-text-outline"
