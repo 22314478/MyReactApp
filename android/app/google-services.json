@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "84961398102",
+    "project_id": "mobiapp-18b5e",
+    "storage_bucket": "mobiapp-18b5e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84961398102:android:2e639f1cb3e53372c7daf7",
+        "android_client_info": {
+          "package_name": "com.mehmet.startup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYeANOYjp4IUJgcDXO66AiPYvdJOcDw4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
